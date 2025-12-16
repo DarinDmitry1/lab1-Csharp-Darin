@@ -3,9 +3,7 @@ using System.Collections.Generic;
 
 public class Tasks
 {
-    /// <summary>
-    ///1. Возвращает дробную часть числа.
-    /// </summary>
+//1. Возвращает дробную часть числа.
     private double Fraction(double x)
     {
         return x - (int)x;
@@ -24,9 +22,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///2. Возвращает код символа (по таблице ASCII).
-    /// </summary>
+//2. Возвращает код символа (по таблице ASCII).
     private int CharToNum(char x)
     {
         return x;
@@ -46,9 +42,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///3. Проверяет, является ли число двузначным.
-    /// </summary>
+//3. Проверяет, является ли число двузначным.
     private bool Is2Digits(int x)
     {
         return x >= 10 && x <= 99 || x <= -10 && x >= -99;
@@ -60,7 +54,8 @@ public class Tasks
         if (int.TryParse(Console.ReadLine(), out int x))
         {
             Console.WriteLine(Is2Digits(x)
-                ? "Число двузначное." : "Число не двузначное.");
+                ? "Число двузначное."
+                : "Число не двузначное.");
         }
         else
         {
@@ -68,9 +63,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///4. Проверяет, входит ли число в диапазон [a, b].
-    /// </summary>
+//4. Проверяет, входит ли число в диапазон [a, b].
     private bool IsInRange(int a, int b, int num)
     {
         int min = Math.Min(a, b);
@@ -98,9 +91,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///5. Проверяет равенство трёх чисел.
-    /// </summary>
+//5. Проверяет равенство трёх чисел.
     private bool IsEqual(int a, int b, int c)
     {
         return a == b && b == c;
@@ -126,9 +117,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///6. Возвращает модуль числа.
-    /// </summary>
+//6. Возвращает модуль числа.
     private int Abs(int x)
     {
         return x < 0 ? -x : x;
@@ -147,9 +136,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///7. Проверяет делимость на 3 или 5.
-    /// </summary>
+//7. Проверяет делимость на 3 или 5.
     private bool Is35(int x)
     {
         bool div3 = x % 3 == 0;
@@ -172,9 +159,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///8. Возвращает максимум из трёх чисел.
-    /// </summary>
+//8. Возвращает максимум из трёх чисел.
     private int Max3(int x, int y, int z)
     {
         int max = x;
@@ -201,9 +186,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///9. Возвращает сумму чисел x и y, но если она от 10 до 19 — возвращает 20.
-    /// </summary>
+//9. Возвращает сумму чисел x и y, но если она от 10 до 19 — возвращает 20.
     private int Sum2(int x, int y)
     {
         int sum = x + y;
@@ -227,9 +210,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///10. Возвращает название дня недели по номеру.
-    /// </summary>
+//10. Возвращает название дня недели по номеру.
     private string Day(int x)
     {
         switch (x)
@@ -258,9 +239,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///11. Возвращает строку со всеми числами от 0 до x.
-    /// </summary>
+//11. Возвращает строку со всеми числами от 0 до x.
     private string ListNums(int x)
     {
         string result = "";
@@ -284,9 +263,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///12. Возвращает строку с чётными числами от 0 до x.
-    /// </summary>
+//12. Возвращает строку с чётными числами от 0 до x.
     private string Chet(int x)
     {
         string result = "";
@@ -310,9 +287,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///13. Возвращает количество цифр в числе.
-    /// </summary>
+//13. Возвращает количество цифр в числе.
     private int NumLen(long x)
     {
         return x.ToString().Length;
@@ -331,9 +306,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///14. Рисует квадрат из звёздочек.
-    /// </summary>
+//14. Рисует квадрат из звёздочек.
     private void Square(int x)
     {
         for (int i = 0; i < x; i++)
@@ -359,9 +332,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///15. Рисует прямоугольный треугольник, выровненный по правому краю.
-    /// </summary>
+//15. Рисует прямоугольный треугольник, выровненный по правому краю.
     private void RightTriangle(int x)
     {
         for (int i = 1; i <= x; i++)
@@ -383,9 +354,7 @@ public class Tasks
         }
     }
 
-    /// <summary>
-    ///16. Возвращает индекс первого вхождения числа в массив.
-    /// </summary>
+//16. Возвращает индекс первого вхождения числа в массив.
     private int FindFirst(int[] arr, int x)
     {
         for (int i = 0; i < arr.Length; i++)
@@ -410,9 +379,7 @@ public class Tasks
             : "Число не найдено.");
     }
 
-    /// <summary>
-    ///17. Возвращает элемент с наибольшим модулем.
-    /// </summary>
+//17. Возвращает элемент с наибольшим модулем.
     private int MaxAbs(int[] arr)
     {
         if (arr.Length == 0) throw new ArgumentException("Массив пустой");
@@ -434,9 +401,7 @@ public class Tasks
         Console.WriteLine($"Наибольшее по модулю значение: {MaxAbs(arr)}");
     }
 
-    /// <summary>
-    ///18. Возвращает массив с вставкой ins в arr на позицию pos.
-    /// </summary>
+//18. Возвращает массив с вставкой ins в arr на позицию pos.
     private int[] Add(int[] arr, int[] ins, int pos)
     {
         if (pos < 0) pos = 0;
@@ -466,9 +431,7 @@ public class Tasks
         Console.WriteLine("Результат: " + string.Join(" ", Add(arr, ins, pos)));
     }
 
-    /// <summary>
-    ///19. Возвращает массив, записанный задом наперёд.
-    /// </summary>
+//19. Возвращает массив, записанный задом наперёд.
     private int[] ReverseBack(int[] arr)
     {
         int[] result = new int[arr.Length];
@@ -487,9 +450,7 @@ public class Tasks
         Console.WriteLine("Реверсированный массив: " + string.Join(" ", ReverseBack(arr)));
     }
 
-    /// <summary>
-    ///20. Возвращает индексы всех вхождений числа в массив.
-    /// </summary>
+//20. Возвращает индексы всех вхождений числа в массив.
     private int[] FindAll(int[] arr, int x)
     {
         List<int> indices = new List<int>();
